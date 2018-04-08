@@ -1,0 +1,75 @@
+<hr>
+<div class="pageheader">
+    <h1>Gallery</h1>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a class="link_bc" href="aboutus.html">Inside the Studio</a></li>
+        <li class="breadcrumb-item active">gallery</li>
+    </ol>
+    <div class="row">
+        <div class="col-12">
+            <img class="img-responsive" src="images/Gallery.png" style="height:330px;width:560px;padding-right:30px" align="left" />
+            <h1>Inside <span style="font-weight:900"> Studio</span></h1>
+            <p class="para"> At AUM Studio, we not only have an inspiring teachers but an exceptional environment enabled for creating a zen experience for yogis.</p>
+            <p class="para">The atmosphere also plays an important role in creating interest, motivation to continue the practice and enhance the learning abilities in one's mind.</p>
+            <p class="para">So, without further delay, just peek into our studio through the pictures below...</p>
+
+        </div>
+    </div>
+    <hr>
+    <p style="padding:50px;"> </p>
+    <h1 align="center"><u>STUDIO GALLERY</u></h1>
+    <p style="padding:20px;"> </p>
+
+    <div id="galleryCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" ng-controller="GalleryController">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#galleryCarousel" data-slide-to="0" class="active">1</li>
+            <li data-target="#galleryCarousel" data-slide-to="1">2</li>
+            <li data-target="#galleryCarousel" data-slide-to="2">3</li>
+            <li data-target="#galleryCarousel" data-slide-to="3">4</li>
+            <li data-target="#galleryCarousel" data-slide-to="4">5</li>
+            <li data-target="#galleryCarousel" data-slide-to="5">6</li>
+            <li data-target="#galleryCarousel" data-slide-to="6">7</li>
+            <li data-target="#galleryCarousel" data-slide-to="7">8</li>
+        </ul>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item carousel-item" ng-class="{active:!$index}" ng-repeat="pic in pics">
+                <img class="img-responsive " ng-src="{{pic.url}}" alt="" data-toggle="modal" data-target="#myModal" />
+                <div class="carousel-caption">
+                    <h3>{{pic.name}}</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#galleryCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#galleryCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Inside the Studio</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">×</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placehold.it/400x300" alt="model image" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+</div>
+<p style="padding:20px;"> </p>

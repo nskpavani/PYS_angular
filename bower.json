@@ -1,0 +1,30 @@
+{
+  "name": "pys",
+  "description": "a yoga studio website",
+  "main": "index.html",
+  "authors": [
+    "Pavani"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "pys",
+    "yogastudio"
+  ],
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0",
+    "angular": "^1.6.9",
+    "angular-ui-router": "^1.0.15",
+    "fontawesome": "^5.0.9",
+    "angular-route": "^1.6.9"
+  }
+}

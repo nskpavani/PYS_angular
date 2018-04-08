@@ -1,0 +1,134 @@
+<p style="padding:10px;"></p>
+<div class="container bgimg1">
+    <p style="padding:10px;"> </p>
+    <div class="well well-lg">
+        <h3 class="quote">With Yoga not only should body become flexible, Your mind and emotions, and above all your conciousness should become flexible.</h3>
+        <footer class="text-right"> -- Sri Sadhguru Jaggi Vasudev </footer>
+    </div>
+    <p style="padding:10px;"> </p>
+    <div class="row row-content">
+        <div class="col- 4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/classes_pic1.png" />
+                <h3 align="center">Classes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="col-4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/schedule_pic.png" />
+                <h3 align="center">Schedules</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="col- 4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/workshop_pic.png" />
+                <h3 align="center">Workshop</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row row-content">
+        <div class="row">
+            <h2>Inside the Studio...</h2>
+            <p style="padding:20px;"> </p><br/>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <h4 class="h4home">New to Yoga??</h4>
+                <p>We can help with any questions you need to know answers...</p>
+
+                <h4 class="h4home">Who we are</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Our Team</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Classes</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Workshops</h4>
+                <p>We can help with any questions you need to know answers...</p>
+            </div>
+            <div class="col-4">
+                <h4 class="h4home">Schedules</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Passes &amp; Rates</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Hours of Operation</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Gallery</h4>
+                <p>We can help with any questions you need to know answers...</p>
+                <h4 class="h4home">Manage my account</h4>
+                <p>We can help with any questions you need to know answers...</p>
+            </div>
+            <div class="col-4 col-push-1"> `
+                <h4 class="h4home"> And More..</h4>
+                <div class="row gallery">
+                    <div class="w-100">
+                        <h3 class="h3home"> Get Inside..</h3>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4">
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                    </div>
+                    <div class="col-4 ">
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                        <a href="#">
+                            <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="row row-content">
+        <div class="w-100">
+            <h2>Promotions</h2>
+            <p style="padding:20px;"> </p>
+        </div>
+        <div class="col-3">
+            <img class="img-responsive" src="images/promo.png" alt="promo">
+        </div>
+        <div class="col-9">
+            <h1 style="font-variant: small-caps;color:#5989CE;">Limited time offer!!!</h1>
+            <h3 style="font-variant: small-caps;;color:#5989CE;">20% off on all memberships..HURRY...</h3>
+            <p> We offer promotions and discounts on regular basis. To know more please click the button below</p>
+            <button type="button" class="btn btn-info btn-lg" style="float:right;width:auto;">More Details..</button>
+        </div>
+    </div>
+    <hr />
+    <div class="row row-content" ng-controller="NewsController">
+        <div class="w-100">
+            <h2>Latest News and events...</h2>
+            <p style="padding:20px;"> </p>
+        </div>
+        <div class="col-3 float" ng-repeat="n in news">
+            <div class="table_cell cell2">
+                <h3 align="left"><img src="images/newsletter-icon.png">{{n.date}} Newsletter</h3>
+                <p>
+                    {{n.details}}<a href="#">more</a>
+                </p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+
+    </div>
+</div>

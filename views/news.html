@@ -1,0 +1,61 @@
+<hr>
+<div class="pageheader">
+    <h2>News and Events</h2>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+        <li class="breadcrumb-item active"><a class="link_bc" href="aboutus.html">News and Events</a></li>
+
+    </ol>
+    <div class="row">
+        <div class="col-12">
+            <img class="img-responsive img_top" src="images/news_events.png" align="left" />
+            <h1>News &amp;<span style="font-weight:900"> Events</span></h1>
+            <p class="para"> Here at AUM Yoga Studio, we always have something or the other exciting things happening in the name of Yoga. We update our website as when the event is scheduled so that there is no confusion or timeout to take necessary steps for regestering/ attending or cancellations for the events.</p>
+            <p class="para">So please check this space and come back quite often to know more exciting news about our upcoming events!!</p>
+        </div>
+    </div>
+    <hr>
+</div>
+
+<div class="container" ng-controller="NewsController">
+    <div class="row row-content" ng-repeat="n in news">
+        <div class="col-2">
+            <img src="images/News_May.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+        </div>
+        <div class="col-10">
+            <p style="color:#5989CE;font-size:40px">{{n.date}} Newsletter</p>
+            <p style="font-size:18px">{{n.details}} <a href="#">more</a></p>
+        </div>
+    </div>
+    <hr>
+    <!-- <div class="row">
+            <div class="col-2">
+                <img src="images/News_Apr.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+            </div>
+            <div class="col-10">
+                <p style="color:#5989CE;font-size:40px">April 2017 Newsletter</p>
+                <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac placerat lorem. Aenean finibus arcu eget efficitur vehicula. Aliquam iaculis, sapien ut imperdiet aliquet, augue augue placerat est, eu ornare ligula justo a elit. Morbi in justo a eros auctor faucibus a nec elit. <a href="#">more</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-2">
+                <img src="images/News_Mar.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+            </div>
+            <div class="col-10">
+                <p style="color:#5989CE;font-size:40px">March 2017 Newsletter</p>
+                <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac placerat lorem. Aenean finibus arcu eget efficitur vehicula. Aliquam iaculis, sapien ut imperdiet aliquet, augue augue placerat est, eu ornare ligula justo a elit. Morbi in justo a eros auctor faucibus a nec elit. <a href="#">more</a></p>
+            </div>
+        </div>
+        <hr> -->
+    <ul class="pager">
+        <li class="previous disabled"><a href="#">&larr; Previous</a></li>
+        <li class="next"><a href="#">Next &rarr;</a></li>
+    </ul>
+</div>
+<p style="padding:10px;"> </p>
+<hr>
+
+<p style="padding:20px;"> </p>

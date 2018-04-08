@@ -1,0 +1,69 @@
+<header>
+    <div class="container-fluid">
+        <div class="navigation">
+            <nav class="navbar navbar-expand-lg navbar-light " role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand navbar-left" ui-sref="home">
+                        <img class="img-responsive" src="/images/logo8.png" alt="Aum Yoga Studio">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>  
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav mt-0 w-100 justify-content-end">
+                        <li class="nav-item active">
+                            <a class="nav-link" ui-sref="root.home">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Inside the Studio </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" ui-sref="root.aboutus">Who We Are</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.team">Our Team</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.passes">Passes &amp; Promos</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.gallery">Gallary</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.testimonial">Testimonials</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a ui-sref="root.classes" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Classes </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" ui-sref="root.description">Class Description</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.schedule">Schedules</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.workshop">Workshops</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.corpclasses">Corporate classes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" ui-sref="root.privateclasses">Private classes</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" ui-sref="root.news">News &amp; Events</a></li>
+                        <li class="nav-item"><a class="nav-link" ui-sref="root.contactus">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+</header>
+<script>
+    $(document).ready(function() {
+        $('.navbar .dropdown').hover(function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+        }, function() {
+            $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+        });
+
+    });
+
+</script>

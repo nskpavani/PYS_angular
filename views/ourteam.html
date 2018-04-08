@@ -1,0 +1,45 @@
+<hr>
+<div class="pageheader">
+    <h2>Our Team</h2>
+</div>
+<div class="container" ng-controller="TeamController">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a class="link_bc" href="aboutus.html">Inside the Studio</a></li>
+        <li class="breadcrumb-item active">Our Team</li>
+    </ol>
+    <div class="row">
+        <div class="col-12">
+            <img class="img-responsive" src="images/ourteam.png" style="height:330px;width:560px;padding-right:30px" align="left" />
+            <h1>Our <span style="font-weight:900"> Team</span></h1>
+            <p class="para">At AUM yoga studio, we are very proud to have an excellent team of instructors and service staff who are passionate about Yoga and have highest commitment to provide personalized service.</p>
+            <p class="para">So without further delay, please meet our team of excellence!!!</p>
+        </div>
+    </div>
+    <hr>
+    <div class="row " ng-repeat="member in team">
+        <div class="row " ng-show="$index %2 == 0">
+            <div class="col-4">
+                <a href="#">
+                    <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+            <div class="col-8">
+                <h3 style="color:grey;">{{member.firstName}}<span style="color:#5989CE;"> {{member.lastName}}</span> <small>{{member.qualification}}</small></h3>
+                <p>{{member.description}}</p>
+            </div>
+        </div>
+        <div class="row " ng-show="!($index %2 == 0)">
+            <div class="col-8">
+                <h3 style="color:grey;">{{member.firstName}}<span style="color:#5989CE;"> {{member.lastName}}</span> <small>{{member.qualification}}</small></h3>
+                <p>{{member.description}}</p>
+            </div>
+            <div class="col-4">
+                <a href="#">
+                    <img class="img-responsive img-thumbnail" src="http://placehold.it/400x300" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

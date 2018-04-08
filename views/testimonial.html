@@ -1,0 +1,52 @@
+<hr>
+<div class="pageheader">
+    <h1>Testmonials</h1>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a class="link_bc" href="aboutus.html">Inside the Studio</a></li>
+        <li class="breadcrumb-item active">Testimonials</li>
+    </ol>
+    <div class="row">
+        <div class="col-12">
+            <img class="img-responsive" src="images/testimonial.png" style="height:330px;width:560px;padding-right:30px" align="left" />
+            <h1>Testimonials</h1>
+            <p class="para">AUM Yoga Studio is established to provide fundamentals and correct Yoga to all with utmost love and compassion for humanity. It feels wonderful when such an honest and genuine attempt gets recognition through people who experienced it.
+            </p>
+            <p class="para">We appreciate and are feel grateful for all of those who took time and energy to share their feedback.</p>
+            <p class="para">We are happy to share those words with you here.</p>
+            <p class="para">We would love to here from you too!<a href="contactus.html">Please send us your feedback here!</a></p>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="row no-gutters" ng-controller="TestimonyController">
+            <div ng-repeat="t in testimonials">
+                <div ng-show="$index %2 == 0">
+                    <div class="col-10">
+                        <blockquote class="testimo">{{t.comment}}<br>
+                            <cite style="float:right;color:black">-{{t.username}}</cite></blockquote>
+                    </div>
+                </div>
+                <div ng-show="$index %2 != 0">
+                    <div class="col-10  offset-2">
+                        <blockquote class="testimo">{{t.comment}}<br>
+                            <cite style="float:right;color:black">-{{t.username}}</cite></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="col-10 col-push-2">
+                <blockquote class="testimo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non libero ipsum. Donec iaculis eu diam ac cursus. Fusce posuere eros eget metus iaculis, in consequat nisi mattis. Integer euismod mi enim, sed vestibulum erat tincidunt eu. Pellentesque porta congue tincidunt. Proin ex justo, scelerisque sit amet est at, dictum posuere nibh. In in accumsan sapien. <br> <cite style="float:right;color:black;">-Anonymous</cite></blockquote>
+            </div>
+            <div class="col-10">
+                <blockquote class="testimo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non libero ipsum. Donec iaculis eu diam ac cursus. Fusce posuere eros eget metus iaculis, in consequat nisi mattis. Proin ex justo, scelerisque sit amet est at, dictum posuere nibh. In in accumsan sapien.
+                    <br> <cite style="float:right;color:black;">-Matt</cite></blockquote>
+            </div>
+            <div class="col-10 col-push-2">
+                <blockquote class="testimo">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non libero ipsum. Donec iaculis eu diam ac cursus. Fusce posuere eros eget metus iaculis, in consequat nisi mattis. Integer euismod mi enim, sed vestibulum erat tincidunt eu. Pellentesque porta congue tincidunt. Proin ex justo, scelerisque sit amet est at, dictum posuere nibh. In in accumsan sapien. <br> <cite style="float:right;color:black;">-Lindsy</cite></blockquote>
+            </div> -->
+    </div>
+</div>
+<p style="padding:20px;"> </p>

@@ -1,0 +1,112 @@
+<hr>
+<div class="pageheader">
+    <h2>Passes and Promos</h2>
+</div>
+<div class="container">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+        <li class="breadcrumb-item"><a class="link_bc" href="aboutus.html">Inside the Studio</a></li>
+        <li class="breadcrumb-item active">Passes and Promos</li>
+    </ol>
+    <div class="row">
+        <div class="col-12">
+            <img class="img-responsive" style="height:330px;width:560px;padding-right:30px" align="left" src="images/Passes_Promos.png" />
+            <h1>Passes &amp; <span style="font-weight:900"> Promotions</span></h1>
+            <p class="para">
+                At Aum Yoga Studio, keeping different needs of different people, we are very pleased to offer a wide variety of passes for members as well as drop-ins to suit individuals budget and schedules.
+                <br>
+            </p>
+            <p class="para">
+                So if you want to drop-in for your favorite class or you are having some busy days and some easy days where planning in advance is tough, we have some flexible drop in memberships. OR if you are a regular yoga enthusiast to practice every day and on schedule, there is monthly or even long term memberships available.
+                <br>
+            </p>
+        </div>
+        <div class="col-12">
+            <p style="padding:10px;"> </p>
+            <p class="para"> <b>Note:</b> Aum Yoga studio offers monthly promotions and discounts on regular basis. Please check them below to know more</p>
+        </div>
+    </div>
+    <p style="padding:10px;"> </p>
+    <hr>
+</div>
+<div class="container" ng-controller="PassesController">
+    <div class="row row-content">
+        <div class="row">
+            <h1 style="color:#2F2F2F;" align="center"><u>DROP-IN Classes</u></h1>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="row">
+            <div class="col-4 table_cell cell3" ng-repeat="pass in passes" ng-show="pass.type=='dropIn'" ng-class="{passClass: pass.valuepack == 'true' }">
+
+                <div class="pass_header">
+                    <p style="font-size:36px;color:white" align="center">{{pass.name}}</p>
+                </div>
+                <div>
+                    <h3 align="center">{{pass.price}}*</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">*{{pass.gst}}</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">* {{pass.terms}}</h3>
+                    <hr>
+                    <h6 align="center"> <a href="#" class="btn btn-danger" style="font-size:20px">Buy</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  <div class="col-4 table_cell cell3" style="height:420px; border:2px solid;border-color:#03396c">
+                <div class="pass_header_hot">
+                    <p style="font-size:36px;color:white" align="center">10 Times Pass</p>
+                </div>
+                <div>
+                    <h3 align="center">$135*</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">*includes GST</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">* Pass is not refundable or transferable</h3>
+                    <hr>
+                    <h6 align="center"> <a href="#" class="btn btn-danger" style="font-size:20px">Buy</a></h6>
+                </div>
+            </div>
+            <div class="col-4 table_cell cell3">
+                <div class="pass_header">
+                    <p style="font-size:36px;color:white" align="center">20 Times Pass</p>
+                </div>
+                <div>
+                    <h3 align="center">$275*</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">*includes GST</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">* Pass is not refundable or transferable</h3>
+                    <hr>
+                    <h6 align="center"> <a href="#" class="btn btn-danger" style="font-size:20px">Buy</a></h6>
+                </div>
+            </div> -->
+    <hr>
+    <div class="row row-content">
+        <div class="row">
+            <h1 style="color:#2F2F2F;" align="center"><u>Memberships</u></h1>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="row">
+            <div class="col-3 table_cell cell4" ng-repeat="pass in passes" ng-show="pass.type=='membership'" ng-class="{passClass: pass.valuepack == 'true' }">
+
+                <div class="pass_header">
+                    <p style="font-size:36px;color:white" align="center">{{pass.name}}</p>
+                </div>
+                <div>
+                    <h3 align="center">{{pass.price}}*</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">*{{pass.gst}}</h3>
+                    <hr>
+                    <h3 class="table-cell" align="center">* {{pass.terms}}</h3>
+                    <hr>
+                    <h6 align="center"> <a href="#" class="btn btn-danger" style="font-size:20px">Buy</a></h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+</div>
+<hr>
+<p style="padding:20px;"> </p>
