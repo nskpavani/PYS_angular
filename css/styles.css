@@ -1,0 +1,387 @@
+address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+.para {
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+.img_top {
+    height: 280px;
+    width: 500px;
+    padding-right: 30px
+}
+
+#logo1 {
+    height: 100px;
+    width: 266px;
+}
+
+html,
+body {
+    height: 100%;
+    z-index: 0;
+    font-family: monospace;
+}
+
+.container-fluid {
+    height: auto;
+    /* don't show content that exceeds my height */
+}
+
+.bgimg2 {
+    background-image: url("../images/yoga.jpeg");
+    /* Full height */
+    min-height: 100%;
+    height: auto !important;
+    /* cross-browser */
+    height: 100%;
+    padding-bottom: none;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.retroshadow {
+    font-size: 48px;
+    text-align: center;
+    font-variant: small-caps;
+    text-rendering: optimizeLegibility;
+    color: gold;
+    opacity: 0%;
+    letter-spacing: .05em;
+}
+
+.table_date {
+    border-radius: 25px 25px;
+}
+
+.h4home {
+    font-size: 30px !important;
+    color: #5989CE;
+    font-variant: small-caps;
+}
+
+.gallery {
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 20px;
+    border-top-width: thick;
+    border-top-color: #5989CE;
+    ;
+}
+
+.h3home {
+    color: #5989CE;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.bgimg1 {
+    background-image: url("../images/aum1.jpg");
+    height: auto;
+    border: none;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+footer .container-fluid {
+    color: #5989CE;
+    background: black;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.quote {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.float {
+    float: center;
+}
+
+.image_class {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.table_cell {
+    width: 350px;
+    height: 350px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 1px solid #489DBC;
+    text-align: center;
+}
+
+.table_cell2 {
+    width: 350px;
+    height: 350px;
+    display: table-cell;
+    vertical-align: middle;
+    border: 4px solid #5989CE;
+    text-align: center;
+}
+
+.table_header_group {
+    width: 350px;
+    height: 350px;
+    display: table-header-group;
+    background-color: lightgray;
+    vertical-align: middle;
+    border: 1px solid #5989CE;
+    text-align: center;
+}
+
+.cell2 {
+    width: 350px;
+    height: 350px;
+    display: table-cell;
+    vertical-align: middle;
+    border: none;
+    text-align: left;
+}
+
+.pass_header {
+    height: 100px;
+    background-color: #b3cde0;
+    border-radius: 15px;
+}
+
+.pass_header_hot {
+    height: 100px;
+    background-color: #03396c;
+    border-radius: 15px;
+}
+
+#carouselButtons {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.cell3 {
+    width: 350px;
+    height: 400px;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    text-align: left;
+}
+
+.cell4 {
+    width: 280px;
+    height: 420px;
+    display: table-cell;
+    vertical-align: middle;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    text-align: left;
+}
+
+.btn-color {
+    background-color: #5989CE;
+    color: white;
+}
+
+.carousel-control.left {
+    background-image: none !important;
+}
+
+.carousel-control.right {
+    background-image: none !important;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.testimo {
+    background: url(/images/bg-quote1.png) no-repeat;
+    margin: 2em 4em;
+    color: #767171;
+    border-left: 5px solid #5989CE;
+    padding-left: 40px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+.navbar .navbar-nav .navbar-expand-lg .nav-item {
+    color: #fff;
+    font-family: sans-serif;
+    background: transparent;
+    display: inline-block;
+    border: none;
+    padding-bottom: 100px;
+}
+
+.navbar .navbar-collapse {
+    text-align: right;
+    width: 100%;
+}
+
+
+/*
+@media (max-width: 991px) {
+    #logo1 {
+        height: 100px;
+        width: auto;
+    }
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+    }
+    .navbar-right .dropdown-menu {
+        right: 0;
+        left: 0;
+        text-align: center;
+    }
+    .open>.dropdown-menu {
+        display: inline;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: inline-block !important;
+    }
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+    }
+}
+*/
+
+
+/*background color when active*/
+
+.navbar-expand-lg .navbar-nav>.nav-item .active>a,
+.navbar-expand-lg .navbar-nav>.nav-item .active>a:focus,
+.navbar-expand-lg .navbar-nav>.nav-item .active>a:hover {
+    color: #fff;
+    display: inline-block;
+    background-color: #5989CE!important;
+    background-image: none!important;
+}
+
+
+/*text color of all items in the navbar*/
+
+.navbar-expand-lg .navbar-nav>.nav-item>a {
+    color: #5989CE;
+    background: transparent;
+    font-size: 18px;
+}
+
+.navbar-expand-lg .navbar-nav>a,
+.navbar-expand-lg .navbar-nav>a:focus,
+.navbar-expand-lg .navbar-nav>a:hover {
+    color: #fff;
+    background-color: #767171;
+}
+
+
+/*
+.navbar-expand-lg .navbar-nav>.dropdown .open>a,
+.navbar-expand-lg .navbar-nav>.dropdown .open>a:focus,
+.navbar-expand-lg .navbar-nav>.dropdown .open>a:hover {
+    color: #fff;
+    background-color: #5989CE;
+}*/
+
+.dropdown-item {
+    color: #5989CE;
+    background-color: transparent;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+    color: #fff;
+    background-color: #5989CE;
+}
+
+.dropdown>a:focus,
+.dropdown>a:hover {
+    color: #fff;
+    background-color: #5989CE;
+}
+
+.dropdown>a {
+    color: #5989CE;
+    background-color: transparent;
+}
+
+.dropdown:hover .dropdown-toggle {
+    display: inline-block;
+}
+
+.pageheader {
+    background-image: url("../images/yoga_heading.jpeg");
+    background-repeat: no-repeat;
+    padding: 50px 250px;
+    color: #fff;
+    height: 150px;
+}
+
+.breadcrumb {
+    background: none;
+    font-size: 16px;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+.panel-group .panel-heading {
+    border-right: 3px solid;
+    border-right-color: #5989CE;
+    color: #5989CE;
+}
+
+.panel-group .panel-title {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.passClass {
+    height: 440px;
+    border: 4px solid;
+    border-color: #03396c;
+}
